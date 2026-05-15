@@ -1,0 +1,21 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 180" role="img" aria-label="Talend REST API Data Engineering Project">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#1f1308"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="api" x1="0" x2="1">
+      <stop offset="0" stop-color="#ff6b35"/>
+      <stop offset="1" stop-color="#00e5ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="260" height="180" rx="28" fill="url(#bg)"/>
+  <circle cx="74" cy="76" r="38" fill="#ff6b35"/>
+  <rect x="150" y="45" width="68" height="62" rx="14" fill="#0ea5e9"/>
+  <path d="M112 76h38" stroke="url(#api)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M142 64l15 12-15 12" fill="none" stroke="#e0f2fe" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="74" y="84" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="800" fill="#fff">T</text>
+  <text x="184" y="82" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="800" fill="#fff">API</text>
+  <text x="130" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="800" fill="#f8fafc">Talend REST API</text>
+  <text x="130" y="164" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#94a3b8">Integration Workflow</text>
+</svg>

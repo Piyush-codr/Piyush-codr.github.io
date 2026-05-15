@@ -1,0 +1,21 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 180" role="img" aria-label="Qlik Snowflake Data Engineering Project">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#052e2b"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="0" x2="1">
+      <stop offset="0" stop-color="#22c55e"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <rect width="260" height="180" rx="28" fill="url(#bg)"/>
+  <circle cx="74" cy="76" r="38" fill="#22c55e"/>
+  <path d="M158 48h54l14 24-41 59-41-59 14-24Z" fill="#38bdf8"/>
+  <path d="M112 76h44" stroke="url(#flow)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M148 63l16 13-16 13" fill="none" stroke="#e0f2fe" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="74" y="84" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="800" fill="#fff">Q</text>
+  <text x="185" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="800" fill="#fff">SF</text>
+  <text x="130" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="800" fill="#f8fafc">Qlik to Snowflake</text>
+  <text x="130" y="164" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#94a3b8">Data Pipeline</text>
+</svg>

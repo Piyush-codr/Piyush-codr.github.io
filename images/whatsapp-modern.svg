@@ -1,0 +1,6 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="WhatsApp">
+  <rect width="128" height="128" rx="30" fill="#0f172a"/>
+  <circle cx="64" cy="62" r="42" fill="#22c55e"/>
+  <path d="M42 101l5-19a39 39 0 1 1 15 11l-20 8Z" fill="#22c55e" stroke="#eafff2" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M51 45c2-4 5-4 8-2l5 10c1 2 1 4-1 6l-3 3c4 7 9 12 17 16l4-3c2-1 4-1 6 0l10 5c3 2 3 5 1 8-3 5-9 7-15 5-17-5-31-18-37-35-2-5 0-10 5-13Z" fill="#fff"/>
+</svg>

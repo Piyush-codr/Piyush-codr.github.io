@@ -1,0 +1,6 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 160" role="img" aria-label="Spark">
+  <rect width="220" height="160" rx="30" fill="#0f172a"/>
+  <path d="M112 18 94 75l-52 8 44 28-14 43 43-29 45 29-15-45 33-22-44-10-22-59Z" fill="#f97316"/>
+  <path d="M112 48 103 83l-31 5 27 17-8 26 26-18 27 18-9-27 20-13-27-6-16-37Z" fill="#facc15"/>
+  <text x="110" y="143" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#ffffff">Spark</text>
+</svg>

@@ -1,18 +1,18 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <title>Piyush Kumar | Data Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body data-theme="dark">
+    <canvas id="data-bg-canvas" aria-hidden="true"></canvas>
     <div class="site-main-wrapper">
         <button class="hamberger">
             <img src="./images/hamburge.jpg" alt="" width="30" height="30">
@@ -24,49 +24,13 @@
             <ul>
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#Education">Education</a></li>
                 <li><a href="#Projects">Projects</a></li>
                 <li><a href="#languages">Languages</a></li>
                 <li><a href="#certificates">Certificates</a></li>
             </ul>
         </div>
-        <script>
-            alert("For better view in mobile,open in Desktop view.");
-            var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?44646';
-            var s = document.createElement('script');
-            s.type = 'text/javascript';
-            s.async = true;
-            s.src = url;
-            var options = {
-                "enabled": true,
-                "chatButtonSetting": {
-                    "backgroundColor": "#4dc247",
-                    "ctaText": "Whatsapp",
-                    "borderRadius": "25",
-                    "marginLeft": "0",
-                    "marginBottom": "50",
-                    "marginRight": "50",
-                    "position": "right"
-                },
-                "brandSetting": {
-                    "brandName": "WATI",
-                    "brandSubTitle": "Typically replies within a day",
-                    "brandImg": "https://cdn.clare.ai/wati/images/WATI_logo_square_2.png",
-                    "welcomeText": "Hi there!\nIt's Piyush...!\nHow can I help you?",
-                    "messageText": "Hello, I have a question about {{page_link}}",
-                    "backgroundColor": "#0a5f54",
-                    "ctaText": "Start Chat",
-                    "borderRadius": "25",
-                    "autoShow": false,
-                    "phoneNumber": "918340183196"
-                }
-            };
-            s.onload = function () {
-                CreateWhatsappChatWidget(options);
-            };
-            var x = document.getElementsByTagName('script')[0];
-            x.parentNode.insertBefore(s, x);
-        </script>
         <header>
             <div class="container">
                 <nav id="main-nav" class="flex items-center justify-between">
@@ -78,6 +42,7 @@
                         <div>
                             <a href="#">Home</a>
                             <a href="#about">About</a>
+                            <a href="#experience">Experience</a>
                             <a href="#Education">Education</a>
                             <a href="#Projects">Projects</a>
                             <a href="#languages">Languages</a>
@@ -94,63 +59,88 @@
 
                     </div>
                 </nav>
-                <div class="hero flex items-center justify-between">
+                <div id="Home" class="hero flex items-center justify-between">
                     <div class="left flex-1 flex justify-center">
-                        <img src="./images/New-file (2).gif" alt="" width="300" height="400">
-                    </div>
-                    <div class="right flex-1">
-                        <h3>PIYUSH KUMAR</h3>
-                        <h1>I am a Data<span> Engineer.</span></h1>
-                        <p>
-                            Started my journey with strong foundations in programming and problem-solving, 
-                            and gradually transitioned into the world of Data Engineering. I have hands-on
-                             experience with SQL, Python, Talend, & Snowflake,
-                            and I enjoy building scalable ETL pipelines and cloud-based solutions on
-                            Google Cloud Platform (BigQuery, Dataflow, Pub/Sub). Alongside, I keep 
-                            sharpening my Data Structures and Algorithms to stay competitive and aim to
-                             evolve further into Data Science and Generative AI.
-                        </p>
-                        <div>
-                            <button class="btn btn-primary">
-                                <a href="resume/Piyush Kumar- Data Engineer.pdf" download>Download CV</a>
-
-                            </button>
-
+                        <div class="hero-image-frame">
+                            <img src="./images/New-file (2).gif" alt="Piyush Kumar data engineer visual" width="300" height="400">
                         </div>
                     </div>
+                    <div class="right flex-1">
+                        <h3 class="eyebrow">DATA PIPELINES | CLOUD PLATFORMS | INTELLIGENT WORKFLOWS</h3>
+                        <h1>I turn raw data into <span>production-ready intelligence.</span></h1>
+                        <p>
+                            Data Engineer focused on designing cloud-native pipelines, validating data movement, and keeping enterprise workflows reliable from source to analytics. I work across GCP, BigQuery, Airflow, Pub/Sub, Snowflake, Talend, SQL, and Python to transform scattered data into trusted, scalable systems.
+
+                        </p>
+                        <div class="hero-actions">
+                            <button class="btn btn-primary">
+                                <a href="resume/Piyush DE (1).pdf" download>Download CV</a>
+                            </button>
+                            <button class="btn btn-secondary">
+                                <a href="#Projects">View Projects</a>
+                            </button>
+                        </div>
+                        <div class="tech-stack" aria-label="Core technology stack">
+                            <span><img src="./images/python-removebg-preview.png" alt="">Python</span>
+                            <span><img src="./images/sql2.png" alt="">SQL</span>
+                            <span>NumPy</span>
+                            <span>Pandas</span>
+                            <span><img src="./images/TALEND-removebg-preview.png" alt="">Talend</span>
+                            <span><img src="./images/qlik-removebg-preview.png" alt="">Qlik</span>
+                            <span>Apache Airflow</span>
+                            <span>ETL / ELT</span>
+                            <span>Data Pipelines</span>
+                            <span><img src="./images/Snowfalkje-removebg-preview.png" alt="">Snowflake</span>
+                            <span>BigQuery</span>
+                            <span>Spark</span>
+                            <span><img src="./images/Databricks_Logo-removebg-preview.png" alt="">Databricks</span>
+                            <span><img src="./images/gcp-removebg-preview.png" alt="">GCP</span>
+                            <span>Data Warehouse</span>
+                            <span><img src="./images/github.png" alt="">Git / CI-CD</span>
+                            <span>GenAI</span>
+                        </div>
+                    </div>
+            </div>
                 </div>
         </header>
         <section id="about" class="about">
             <div class="container flex items-center about-inner-wrap">
-                <div class="">
-                    <img class="about-me-image" src="./images/BBB.jpg" alt="" width="400" height="500">
+                <div class="about-photo-frame">
+                    <img class="about-me-image" src="./images/BBB.jpg" alt="Piyush Kumar" width="400" height="500">
                 </div>
                 <div class="flex-1 right">
                     <h1>About <span>Me</span></h1>
-                    <h3>Hello you !!</h3>
+                    <h3>Data Engineer by profession, pipeline thinker by habit.</h3>
                     <p>
-                        This is <b>Piyush Kumar</b>, a <b>Data Engineer</b> at <b>Accenture</b> with a strong foundation in
-                        <b>Programming</b> and a passion for <b>building data-driven solutions</b>. Originally from
-                        <b>Sitamarhi</b>, Bihar (birthplace of Goddess Sita), I have always been curious about exploring
-                        new perspectives—both through technology and through traveling.
+                        I am a <b>Data Engineer at Accenture</b> with experience in building and supporting
+                        <b>cloud-based data solutions</b> and enterprise data workflows. My work focuses on
+                        <b>data onboarding, metadata migration, ingestion pipelines, and data validation</b>
+                        processes on <b>Google Cloud Platform</b>.
                     </p>
                     <p>
-                        My <b>hobbies</b> include traveling and experiencing different cultures, cuisines, and traditions,
-                         which inspires me to bring creativity and openness into my professional life as well.
+                        I have hands-on experience with <b>SQL, Python, BigQuery, Airflow, Pub/Sub, Snowflake,
+                        Talend, Spanner, Postman, and API-based integrations</b> to support scalable and reliable
+                        data processing systems. I enjoy working on <b>data integration workflows, cloud-native
+                        architectures, and optimized data movement</b> across distributed platforms.
                     </p>
                     <p>
-                        On the <b>technical sid</b>e, I specialize in <b>Data Engineering and Cloud technologies</b>, with hands-on
-                        experience in <b>SQL, Python, Talend, Snowflake, and Google Cloud Platform (BigQuery, Dataflow,
-                        Pub/Sub)</b>. I enjoy <b>designing ETL pipelines, data integration workflows, and scalable 
-                        cloud-based solutions</b>. I also continue to strengthen my <b>problem-solving skills</b> through 
-                        <b>Data Structures & Algorithms</b> and stay updated with <b>Machine Learning and Generative AI</b> trends
-                        to future-proof my career.
+                        Along with core data engineering responsibilities, I have also worked on
+                        <b>production support and platform operations</b>, including workflow monitoring,
+                        validation processes, metadata analysis, environment sync activities, and troubleshooting
+                        data pipeline issues in enterprise-scale environments.
+                    </p>
+                    <p>
+                        Originally from <b>Sitamarhi, Bihar</b>, I have always been passionate about learning new
+                        technologies and exploring new perspectives through both technology and travel. Outside of
+                        work, I enjoy traveling, experiencing different cultures, and continuously expanding my
+                        technical knowledge in modern data and cloud technologies.
+                    </p>
                     <div class="social">
                         <a href="https://www.facebook.com/profile.php?id=100005490317503"><img
                                 src="./images/Facebook-logo.png" alt="" width="30" height="20"></a>
-                        <a href="https://www.instagram.com/ig__piyush20/"><img src="./images/insta.jpg" alt=""
+                        <a href="https://www.instagram.com/_piyush.chauhan15/"><img src="./images/insta.jpg" alt=""
                                 width="30" height="20"></a>
-                        <a href="https://www.linkedin.com/in/piyush-kumar-7ab1951b8/"><img src="./images/link.png"
+                        <a href="https://www.linkedin.com/in/piyush-kumar-7ab 1951b8/"><img src="./images/link.png"
                                 alt="" width="30" height="20"></a>
                         <a href="https://twitter.com/PiyushS02032608"><img src="./images/Twitter.png" alt="" width="30"
                                 height="20"></a>
@@ -161,9 +151,116 @@
                 </div>
             </div>
         </section>
+        <section id="experience" class="experience">
+            <div class="container">
+                <h1 class="section-heading"><span>Experience</span></h1>
+                <p>My professional timeline across enterprise data engineering, analytics, CRM automation, and internship projects.</p>
+                <div class="experience-timeline">
+                    <div class="experience-card featured-experience">
+                        <div class="experience-header company-header">
+                            <img src="./images/accenture-logo.svg" alt="Accenture logo" width="58" height="58">
+                            <div>
+                                <h2>Accenture</h2>
+                                <h3>Full-time | Gurugram, Haryana, India</h3>
+                            </div>
+                            <span>Oct 2024 - Present</span>
+                        </div>
+                        <div class="role-list">
+                            <div class="role-item">
+                                <div class="role-heading">
+                                    <h3>Data Engg Mgmt & Governance Associate</h3>
+                                    <span>Jan 2026 - Present | Hybrid</span>
+                                </div>
+                                <p>Working on data pipelines, ETL/ELT, data transformation, data validation, and cloud migration initiatives for enterprise-scale data platforms.</p>
+                                <div class="experience-tags">
+                                    <span>Data Pipelines</span>
+                                    <span>ETL / ELT</span>
+                                    <span>Data Validation</span>
+                                    <span>Cloud Migration</span>
+                                    <span>Python</span>
+                                    <span>Data Engineering</span>
+                                </div>
+                            </div>
+                            <div class="role-item">
+                                <div class="role-heading">
+                                    <h3>Packaged App Development Associate</h3>
+                                    <span>Oct 2024 - Mar 2026 | On-site</span>
+                                </div>
+                                <p>Built and optimized ETL pipelines using Talend for ingestion, transformation, and loading into Snowflake and Google BigQuery.</p>
+                                <ul>
+                                    <li>Worked on data integration and warehousing projects using SQL and GCP tools for efficient processing.</li>
+                                    <li>Implemented context variables and reusable Talend components to improve maintainability and scalability.</li>
+                                    <li>Collaborated with cross-functional teams to streamline data migration workflows with accuracy and reduced manual effort.</li>
+                                </ul>
+                                <div class="experience-tags">
+                                    <span>Talend</span>
+                                    <span>Snowflake</span>
+                                    <span>BigQuery</span>
+                                    <span>SQL</span>
+                                    <span>GCP</span>
+                                    <span>Agile</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-card compact-experience">
+                        <div class="experience-header company-header">
+                            <img src="./images/sparks-foundation-logo.svg" alt="The Sparks Foundation logo" width="52" height="52">
+                            <div>
+                                <h2>Data Analyst</h2>
+                                <h3>The Sparks Foundation | Internship</h3>
+                            </div>
+                            <span>Sep 2022 - Nov 2022</span>
+                        </div>
+                        <p>Built a machine learning model to predict a student's score based on study effort, achieving 93% accuracy and correctly predicting most test cases.</p>
+                        <div class="experience-tags">
+                            <span>Machine Learning</span>
+                            <span>Python</span>
+                            <span>Regression</span>
+                            <span>Programming</span>
+                        </div>
+                    </div>
+                    <div class="experience-card compact-experience">
+                        <div class="experience-header company-header">
+                            <img src="./images/smartinternz-logo.svg" alt="SmartInternz logo" width="52" height="52">
+                            <div>
+                                <h2>Salesforce Developer Catalyst</h2>
+                                <h3>SmartInternz | Internship</h3>
+                            </div>
+                            <span>Jul 2022 - Oct 2022</span>
+                        </div>
+                        <p>Worked on the Salesforce Developer CRM platform to support sales and service workflows, including dashboards, automation, leads, and potential lead tracking.</p>
+                        <div class="experience-tags">
+                            <span>Salesforce</span>
+                            <span>CRM</span>
+                            <span>Automation</span>
+                            <span>Dashboards</span>
+                        </div>
+                    </div>
+                    <div class="experience-card compact-experience">
+                        <div class="experience-header company-header">
+                            <img src="./images/lagozon.jpeg" alt="Lagozon logo" width="52" height="52">
+                            <div>
+                                <h2>Intern</h2>
+                                <h3>Lagozon Technologies Private Limited | Internship</h3>
+                            </div>
+                            <span>May 2022 - Jun 2022</span>
+                        </div>
+                        <p>Created Power BI dashboards for business reporting and gained practical exposure to data transformation, data analysis, Google Sheets, and SQL.</p>
+                        <div class="experience-tags">
+                            <span>Power BI</span>
+                            <span>Data Analysis</span>
+                            <span>Data Transformation</span>
+                            <span>Google Sheets</span>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="Education" class="Education">
             <div class="container">
-                <h1 class="section-heading">Edu<span>cation</span></h1>
+                <h1 class="section-heading">Education</h1>
                 <p><span>My Academic Timeline.</span></p>
                 <div class="card-wrapper">
                     <div class="card">
@@ -193,8 +290,8 @@
             </div>
         </section>
         <section id="Projects" class="projects">
-            <h1>My Creations</h1>
-            <p>A collection of projects, I have created and explored during my learning journey</p>
+            <h1>Data, Cloud & Product Builds</h1>
+            <p>A curated view of the projects, internships, dashboards, and ML experiments I have built while growing as a Data Engineer.</p>
             <button class="btn btn-primary">
                 <a href="resume/Piyush Kumar- Data Engineer.pdf" download>Download CV</a>
             </button>
@@ -204,9 +301,39 @@
             <div class="container">
                 <h1 class="section-heading"><span>Projects & </span>Internship</h1>
                 <p>
-                    Here are some of my projects and internship which I have done previously.
+                    Featured data engineering showcases followed by analytics, machine learning, and full-stack foundation projects.
                 </p>
                 <div class="slider">
+                    <div class="slide">
+                        <div class="overlay">
+                            <span>link:-</span>
+                            <a href="https://www.linkedin.com/posts/piyush-kumar-7ab1951b8_talend-qlik-dataengineering-ugcPost-7359542627374936064-U38b?utm_source=share&utm_medium=member_desktop&rcm=ACoAADKSizMBilhLbYaFEXEadUIhL0Ktf-4Lf38">LinkedIn Showcase</a>
+                        </div>
+                        <a class="project-logo-link" href="https://www.linkedin.com/posts/piyush-kumar-7ab1951b8_talend-qlik-dataengineering-ugcPost-7359542627374936064-U38b?utm_source=share&utm_medium=member_desktop&rcm=ACoAADKSizMBilhLbYaFEXEadUIhL0Ktf-4Lf38"><img src="./images/talend-qlik-data-project.svg" alt="Talend and Qlik data integration project" width="100" height="100"></a>
+                        <h1>Talend & Qlik Data Integration</h1>
+                        <p>Talend & Qlik Data Integration is a data engineering showcase focused on building reliable ETL workflows, moving data across systems, and enabling cleaner downstream analytics. The project highlights extraction, transformation, loading, validation, and pipeline-oriented thinking using modern integration tools.</p>
+                        <span>-Piyush Kumar</span>
+                    </div>
+                    <div class="slide">
+                        <div class="overlay">
+                            <span>link:-</span>
+                            <a href="https://www.linkedin.com/posts/piyush-kumar-7ab1951b8_dataengineering-qlik-snowflake-ugcPost-7356315259629940736-APOc?utm_source=share&utm_medium=member_desktop&rcm=ACoAADKSizMBilhLbYaFEXEadUIhL0Ktf-4Lf38">LinkedIn Showcase</a>
+                        </div>
+                        <a class="project-logo-link" href="https://www.linkedin.com/posts/piyush-kumar-7ab1951b8_dataengineering-qlik-snowflake-ugcPost-7356315259629940736-APOc?utm_source=share&utm_medium=member_desktop&rcm=ACoAADKSizMBilhLbYaFEXEadUIhL0Ktf-4Lf38"><img src="./images/qlik-snowflake-project.svg" alt="Qlik and Snowflake data engineering project" width="100" height="100"></a>
+                        <h1>Qlik & Snowflake Data Pipeline</h1>
+                        <p>Qlik & Snowflake Data Pipeline showcases a modern data engineering workflow for moving and preparing data for cloud analytics. It focuses on integration design, structured loading, transformation readiness, and reliable data availability for Snowflake-based reporting and analysis.</p>
+                        <span>-Piyush Kumar</span>
+                    </div>
+                    <div class="slide">
+                        <div class="overlay">
+                            <span>link:-</span>
+                            <a href="https://www.linkedin.com/posts/piyush-kumar-7ab1951b8_talend-dataengineering-restapi-ugcPost-7353013402157375488-ZudW?utm_source=share&utm_medium=member_desktop&rcm=ACoAADKSizMBilhLbYaFEXEadUIhL0Ktf-4Lf38">LinkedIn Showcase</a>
+                        </div>
+                        <a class="project-logo-link" href="https://www.linkedin.com/posts/piyush-kumar-7ab1951b8_talend-dataengineering-restapi-ugcPost-7353013402157375488-ZudW?utm_source=share&utm_medium=member_desktop&rcm=ACoAADKSizMBilhLbYaFEXEadUIhL0Ktf-4Lf38"><img src="./images/talend-rest-api-project.svg" alt="Talend REST API integration project" width="100" height="100"></a>
+                        <h1>Talend REST API Integration</h1>
+                        <p>Talend REST API Integration demonstrates API-driven data ingestion and integration using Talend. The project highlights extracting data from REST endpoints, handling integration flow design, and preparing data for downstream processing in scalable data engineering workflows.</p>
+                        <span>-Piyush Kumar</span>
+                    </div>
                     <div class="slide">
                         <div class="overlay">
                             <span>link:-</span>
@@ -214,13 +341,7 @@
                         </div>
                         <img src="./images/CMS.jpg" alt="" width="100" height="100">
                         <h1>CMS</h1>
-                        <p>College Management System deals with all kind of student details, academic related reports,
-                            college
-                            details, course details, curriculum, batch details and other resource related details too.
-                            It tracks all the
-                            details of a student from the day one to the end of his course which can be used for all
-                            reporting
-                            purpose. This project is made in HTML, CSS, Javascript and database as Sql.</p>
+                        <p>College Management System is a web-based academic management application built to organize student records, course details, curriculum data, batch information, and reporting workflows. It demonstrates structured data handling, SQL-backed storage, and a clean front-end interface for managing day-to-day college operations.</p>
                         <span>-Piyush Kumar</span>
                     </div>
                     <div class="slide">
@@ -230,12 +351,7 @@
                         </div>
                         <img src="./images/employee.jpg" alt="" width="100" height="100">
                         <h1>CIS</h1>
-                        <p>Company Information System is distributed command line interface, developed to maintain the
-                            details of employees
-                            working in any organisation. The CIS has been developed to override the problems prevailing
-                            in the practicing manual system.
-                            It maintains the information about the personal and official details of the employees.
-                            This project is made in Java. </p>
+                        <p>Company Information System is a Java-based command-line application designed to manage employee information in an organized and reliable way. The project focuses on maintaining personal and official employee records, reducing manual tracking effort, and improving access to essential organizational data.</p>
                         <span>-Piyush Kumar</span>
                     </div>
                     <div class="slide">
@@ -245,14 +361,7 @@
                         </div>
                         <img src="./images/sales.jpg" alt="" width="100" height="100">
                         <h1>Sales Dashboard</h1>
-                        <p>This RX Sales measures and monitors the performance of a UK pharmaceutical sales
-                            representative in areas
-                            where there are dispensing doctors.
-                            A sales representative or sales manager would use this application to see how they were
-                            performing with
-                            respect to their peers. This project is made during my internship with Lagozon Edutech
-                            Company.
-                            This project is made by using powerBI.</p>
+                        <p>Sales Dashboard is a Power BI reporting project created during my internship with Lagozon Edutech. It analyzes pharmaceutical sales performance, compares representative-level metrics, and presents business insights through interactive visuals for faster decision-making and performance tracking.</p>
                         <span>-Piyush Kumar</span>
                     </div>
                     <div class="slide">
@@ -262,12 +371,7 @@
                         </div>
                         <img src="./images/Rainfall prediction.jpg" alt="" width="100" height="100">
                         <h1>RPS</h1>
-                        <p>Rainfall Prediction System using ml predicts the rainfall in thi given area for its current
-                            or next 2
-                            upcoming dates. It will give you the whole details about the weather & temperature. It will
-                            be very
-                            benificial for the agriculture industry as well as the farmers. It is made in Pyhton
-                            language.</p>
+                        <p>Rainfall Prediction System is a Python-based machine learning project designed to forecast rainfall patterns using weather-related data. It focuses on analyzing environmental factors such as temperature and weather conditions to support smarter decision-making for agriculture, planning, and climate-aware insights.</p>
                         <span>-Piyush Kumar</span>
                     </div>
                     <div class="slide">
@@ -277,15 +381,7 @@
                         </div>
                         <img src="./images/gym.webp" alt="" width="100" height="100">
                         <h1>Gym site</h1>
-                        <p>.Sometimes it creates a trouble when members lost their receipts.The other problem that can
-                            be faced
-                            by a gym owner is that if he/she wants to inform any message related to working or non
-                            working
-                            days of gym, manually sending message become difficult . If there is online application
-                            available
-                            these problems can be solved. Here, I am using database as MongoDB and all front-end in
-                            HTML, CSS
-                            & Javascript.</p>
+                        <p>Gym Master System is a web application designed to simplify member management, receipt tracking, and gym communication workflows. Built with HTML, CSS, JavaScript, and MongoDB, it helps digitize routine gym operations and reduce manual effort for owners and members.</p>
                         <span>-Piyush Kumar</span>
                     </div>
                     <div class="slide">
@@ -295,12 +391,7 @@
                         </div>
                         <img src="./images/cropify.png" alt="" width="100" height="100">
                         <h1>CRS</h1>
-                        <p>Crop Recommendation System will tell you about which soil suits which plant on the
-                            basis of 1000 samples of soil data.
-                            It will give you the whole details about the soil that it contains which qulaity.
-                            be very
-                            benificial for the agriculture industry as well as the farmers. It is made in Python
-                            language.</p>
+                        <p>Crop Recommendation System is a Python-based machine learning project that recommends suitable crops based on soil and environmental parameters. It uses data-driven prediction logic to support farmers and agricultural planning with more informed crop selection decisions.</p>
                         <span>-Piyush Kumar</span>
                     </div>
                     <div class="slide">
@@ -311,10 +402,7 @@
                         </div>
                         <img src="./images/SSP.png" alt="" width="100" height="100">
                         <h1>SSP</h1>
-                        <p>Students Score Prediction using Ml predicts the score of the students in his/her
-                            last examination which he/she has given. Also it will tell you that you are pass
-                            or not. This whole project is made in Python.
-                        </p>
+                        <p>Student Score Prediction is a machine learning project that estimates a student's expected academic score based on study-hour patterns. It demonstrates practical regression modeling, data preprocessing, and prediction logic using Python to convert simple educational data into useful performance insights.</p>
                         <span>-Piyush Kumar</span>
                     </div>
                     <div class="slide">
@@ -322,12 +410,10 @@
                             <span>link:-</span>
                             <a href="https://github.com/Piyush-codr/OIBSIP-Task-3">Temp. Converter</a>
                         </div>
-                        <a href="https://github.com/Piyush-codr/OIBSIP-Task-3"><img src="./images/ttf.png" alt=""
+                        <a class="project-logo-link" href="https://github.com/Piyush-codr/OIBSIP-Task-3"><img src="./images/ttf.png" alt=""
                                 width="100" height="100"></a>
                         <h1>Temp. Converter</h1>
-                        <p>It is a web page totally created by using HTML, CSS used to convert Celcius temperature into
-                            Farenheit and Farenheit into Celcius.
-                        </p>
+                        <p>Temperature Converter is a lightweight web utility built with HTML and CSS to convert values between Celsius and Fahrenheit. The project focuses on clean UI design, basic input handling, and practical front-end logic for everyday unit conversion.</p>
                         <span>-Piyush Kumar</span>
                     </div>
                     <div class="slide">
@@ -337,14 +423,7 @@
                         </div>
                         <img src="./images/textSummarization.jpeg" alt="" width="100" height="100">
                         <h1>Text Summarization</h1>
-                        <p>It is a web page totally created by using HTML, CSS and backend processing NLP. Basically,
-                            this
-                            techniques aim to automatically generate concise summaries that effectively represent the
-                            content
-                            of a longer document. This field has broad applications across various domains, including
-                            news
-                            articles, research papers, legal documents, social media posts, and more.
-                        </p>
+                        <p>Text Summarization is an NLP-focused project designed to generate concise summaries from longer text content. It explores how natural language processing can extract key ideas from documents, articles, and large text inputs to make information faster to understand.</p>
                         <span>-Piyush Kumar</span>
                     </div>
                 </div>
@@ -355,57 +434,54 @@
         </section>
         <section id="languages" class="languages">
             <div class="container">
-                <h1 class="section-heading"><span>Areas of Proficiency</span></h1>
-                <p>A summary of the tools and technologies I work with confidently.
+                <h1 class="section-heading"><span>Modern Data Stack</span></h1>
+                <p>The tools and platforms I use to move, transform, analyze, and operationalize data.
                 </p>
-                <div class="card-wrapper">
-                    <div class="card">
-                        <img src="./images/python-removebg-preview.png" alt="" width="150" height="150">
-
+                <div class="card-wrapper skill-grid">
+                    <div class="card skill-card">
+                        <img src="./images/python-removebg-preview.png" alt="Python logo" width="150" height="150">
+                        <h3>Python</h3>
                     </div>
-                   <div class="card">
-                        <img src="./images/images-removebg-preview.png" alt="" width="150" height="150">
-
+                    <div class="card skill-card">
+                        <img src="./images/sql2.png" alt="SQL logo" width="150" height="150">
+                        <h3>SQL</h3>
                     </div>
-                    
-                    <div class="card">
-                        <img src="./images/TALEND-removebg-preview.png" alt="" width="150" height="150">
-
+                    <div class="card skill-card">
+                        <img src="./images/TALEND-removebg-preview.png" alt="Talend logo" width="150" height="150">
+                        <h3>Talend</h3>
                     </div>
-                    <div class="card">
-                        <img src="./images/Snowfalkje-removebg-preview.png" alt="" width="150" height="150">
-
+                    <div class="card skill-card">
+                        <img src="./images/gcp-removebg-preview.png" alt="Google Cloud Platform logo" width="150" height="150">
+                        <h3>GCP</h3>
                     </div>
-                    <div class="card">
-                        <img src="./images/gcp-removebg-preview.png" alt="" width="150" height="150">
-
+                    <div class="card skill-card">
+                        <img src="./images/spark-skill.svg" alt="Spark logo" width="150" height="150">
+                        <h3>Spark</h3>
                     </div>
-                    <div class="card">
-                        <img src="./images/qlik-removebg-preview.png" alt="" width="150" height="150">
-
+                    <div class="card skill-card">
+                        <img src="./images/Snowfalkje-removebg-preview.png" alt="Snowflake logo" width="150" height="150">
+                        <h3>Snowflake</h3>
                     </div>
-                     <div class="card">
-                        <img src="./images/bi.jpg" alt="" width="150" height="150">
-
+                    <div class="card skill-card">
+                        <img src="./images/Databricks_Logo-removebg-preview.png" alt="Databricks logo" width="180" height="150">
+                        <h3>Databricks</h3>
                     </div>
-                     <div class="card">
-                        <img src="./images/shell-removebg-preview.png" alt="" width="150" height="150">
-
-                     </div>
-                     <div class="card">
-                        <img src="./images/Databricks_Logo-removebg-preview.png" alt="" width="200" height="150">
-
+                    <div class="card skill-card">
+                        <img src="./images/genai-skill.svg" alt="Generative AI logo" width="150" height="150">
+                        <h3>GenAI</h3>
                     </div>
-                    
-
+                    <div class="card skill-card">
+                        <img src="./images/qlik-removebg-preview.png" alt="Qlik logo" width="150" height="150">
+                        <h3>Qlik</h3>
+                    </div>
                 </div>
 
             </div>
         </section>
         <section id="certificates" class="certificates">
             <div class="container">
-                <h1 class="section-heading"><span>Achievements,</span></h1>
-                <p>Validated Skills, Recognized Success
+                <h1 class="section-heading"><span>Certifications & Achievements</span></h1>
+                <p>Validated skills across cloud, data integration, Snowflake, and generative AI.
                 </p>
 
                 <div class="card-wrapper">
@@ -454,8 +530,14 @@
                     </div>
                     <div class="card">
                         <a
-                            href="https://www.linkedin.com/posts/piyush-kumar-7ab1951b8_certificate-activity-6990680406194827264-v9w4?utm_source=share&utm_medium=member_desktop&rcm=ACoAADKSizMBilhLbYaFEXEadUIhL0Ktf-4Lf38">
-                            <img src="./images/lagozon.jpeg" alt="" width="150" height="150"></a>
+                            href="https://www.linkedin.com/feed/update/urn:li:activity:7458871732704264192/">
+                            <img src="./images/Claude Solution Architect.jpg" alt="" width="150" height="150"></a>
+
+                    </div>
+<div class="card">
+                        <a
+                            href="https://www.linkedin.com/feed/update/urn:li:activity:7458871732704264192/">
+                            <img src="./images/Cloud Computing.jpg" alt="" width="150" height="150"></a>
 
                     </div>
 
@@ -466,26 +548,30 @@
         <section id="Contacts" class="contact">
             <div class="container">
                 <h1 class="section-heading"><span>Contact </span>Me</h1>
-                <p>Open to Connect & Collaborate</p>
-                <div class="card-wrapper">
-                    <div class="card">
-                        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-                        <div class="elfsight-app-5a371872-ee23-4ab5-a2dd-22c54c3509cf"></div>
+                <p>Open to data engineering roles, collaborations, and technical conversations.</p>
+                                <div class="card-wrapper contact-actions">
+                    <div class="card contact-card">
+                        <a href="mailto:hellopiyushsingh12345@gmail.com" aria-label="Email Piyush">
+                            <img src="./images/mail-modern.svg" alt="Email icon" width="64" height="64">
+                            <h3>Email</h3>
+                            <p>hellopiyushsingh12345@gmail.com</p>
+                        </a>
                     </div>
-                    <div class="card">
-                        <a href="mailto: piyushsinghstm@gmail.com"><img src="./images/mail.png" alt="" width="60"
-                                height="60"></a>
-
+                    <div class="card contact-card">
+                        <a href="https://wa.me/918340183196" target="_blank" rel="noopener" aria-label="Message Piyush on WhatsApp">
+                            <img src="./images/whatsapp-modern.svg" alt="WhatsApp icon" width="64" height="64">
+                            <h3>WhatsApp</h3>
+                            <p>Message me directly</p>
+                        </a>
                     </div>
-                    <div class="card">
-                        <a href="https://www.linkedin.com/in/piyush-kumar-7ab1951b8/"><img src="./images/link.png"
-                                alt="" width="60" height="50"></a>
+                    <div class="card contact-card">
+                        <a href="tel:+918340183196" aria-label="Call Piyush now">
+                            <img src="./images/call-modern.svg" alt="Call icon" width="64" height="64">
+                            <h3>Call Now</h3>
+                            <p>+91 8340183196</p>
+                        </a>
                     </div>
-               
-
-                </form>
-            </div>
-        </section>
+                </div>        </section>
         <footer>
             <img class="footer-logo" src="./images/logo piyush.jpg" alt="" height="80" width="90">
             <div class="foorter-socials">
@@ -501,7 +587,7 @@
                         width="30"></a>
             </div>
             <div class="copyright">
-                Copyright2022@Namex PSDTemplate.All Rights Reserved.
+                Copyright 2026 | Piyush Kumar. Built with curiosity and clean data.
             </div>
         </footer>
     </div>
@@ -538,11 +624,72 @@
             });
         }
     </script>
-
-
-
-
-
+    <div class="portfolio-agent" aria-live="polite">
+        <button class="agent-launcher" type="button" aria-label="Open BABU assistant" aria-expanded="false">
+            <img src="./images/piyush pic.jpeg" alt="BABU avatar">
+            <span class="agent-pulse"></span>
+        </button>
+        <div class="agent-scroll-news" hidden>
+            <b>Data update</b>
+            <span>Pipeline observability and automated data quality checks are becoming must-have skills for cloud data teams.</span>
+        </div>
+        <div class="agent-panel" hidden>
+            <div class="agent-header">
+                <img src="./images/piyush pic.jpeg" alt="BABU avatar">
+                <div>
+                    <h3>BABU</h3>
+                    <p>Portfolio guide | Data Engineer</p>
+                </div>
+                <button class="agent-close" type="button" aria-label="Close assistant">×</button>
+            </div>
+            <div class="agent-body">
+                <div class="agent-message bot">
+                    Hey, my name is BABU. How can I help you? Ask me anything about Piyush, his data engineering work, projects, skills, experience, or contact details.
+                </div>
+                <div class="agent-insights">
+                    <h4>Do you know?</h4>
+                    <p><b>Data Engineering:</b> Modern teams are moving toward metadata-driven pipelines, data contracts, and automated validation to improve trust in analytics.</p>
+                    <p><b>Cloud Computing:</b> Cloud-native data platforms increasingly combine orchestration, streaming, warehouses, and AI services for faster decision-making.</p>
+                </div>
+            </div>
+            <div class="agent-suggestions">
+                <button type="button" data-question="Tell me about Piyush">About</button>
+                <button type="button" data-question="What are Piyush's skills?">Skills</button>
+                <button type="button" data-question="Show data engineering projects">Projects</button>
+                <button type="button" data-question="How can I contact Piyush?">Contact</button>
+                <button type="button" data-question="What is the weather in Gurugram?">Weather</button>
+            </div>
+            <form class="agent-input-row">
+                <input type="text" class="agent-input" placeholder="Ask about Piyush..." aria-label="Ask about Piyush">
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
